@@ -1,0 +1,35 @@
+/** @format */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.galleryCard {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	padding-bottom: 150%;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryCard img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.galleryCard:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
