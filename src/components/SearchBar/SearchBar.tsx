@@ -26,7 +26,7 @@ export default function SearchBar({ onSearch }: iSearchBar) {
 					type="text"
 					autoComplete="off"
 					autoFocus
-					placeholder="Search images and photos"
+					placeholder="Search images and differ photos"
 				/>
 				<button
 					className={css.button}
