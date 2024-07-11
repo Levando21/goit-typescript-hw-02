@@ -1,5 +1,5 @@
 /** @format */
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import css from "./App.module.css";
 
 import getImages from "../../api";
@@ -26,8 +26,6 @@ export default function App() {
 	const [showLoadMoreBtn, setShowLoadMoreBtn] = useState<boolean>(false);
 	const [modalParams, setModalParams] =
 		useState<iImageModal>(modalInitialParams);
-
-	const appRef = useRef();
 
 	useEffect(() => {
 		if (searchImage === "") {
