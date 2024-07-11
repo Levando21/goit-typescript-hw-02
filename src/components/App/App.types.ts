@@ -6,7 +6,7 @@ export interface iImage {
 	alt_description: string;
 	likes: number;
 	user: { name: string };
-	followers: string;
+	followers: number;
 }
 
 export interface iImageModal {
